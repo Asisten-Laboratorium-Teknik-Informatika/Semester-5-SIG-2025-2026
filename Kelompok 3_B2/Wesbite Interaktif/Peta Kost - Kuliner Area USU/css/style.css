@@ -1,0 +1,171 @@
+/* Reset & Font Dasar */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  color: #2d3436;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* --- LAYOUT UTAMA (FLEXBOX) --- */
+.app-wrapper {
+  display: flex;
+  height: 100vh; /* Full tinggi layar browser */
+  width: 100%;
+  overflow: hidden; /* Mencegah scrollbar ganda */
+}
+
+/* --- STYLING SIDEBAR (KIRI) --- */
+.sidebar {
+  width: 500px; /* Lebar tetap untuk sidebar */
+  min-width: 350px;
+  background: #ffffff;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.08); /* Bayangan halus ke kanan */
+  z-index: 10; /* Agar bayangan di atas peta */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 25px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo-icon {
+  font-size: 2rem;
+  color: #0984e3;
+}
+.sidebar-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3436;
+}
+.sidebar-header p {
+  margin: 5px 0 0 0;
+  color: #636e72;
+  font-size: 0.9rem;
+}
+
+.sidebar-content {
+  padding: 25px;
+  overflow-y: auto; /* Sidebar bisa discroll kalau kontennya panjang */
+  flex-grow: 1;
+}
+
+/* Kartu-kartu Informasi */
+.info-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.info-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4a5568;
+}
+
+/* Grid Statistik */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  background: #f8f9fa;
+  border: none;
+}
+.stat-number {
+  display: block;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #2d3436;
+}
+.stat-label {
+  font-size: 0.8rem;
+  color: #636e72;
+}
+.stat-item.highlight .stat-number {
+  color: #e74c3c;
+}
+
+/* Styling Legenda Manual */
+.legend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.legend-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.legend-list .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  border: 2px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.legend-list .line {
+  height: 15px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 2px solid;
+}
+
+.about-card {
+  background: #e3f2fd;
+  border: none;
+  font-size: 0.9rem;
+  color: #0d47a1;
+}
+
+/* --- STYLING CONTAINER PETA (KANAN) --- */
+.map-container {
+  flex-grow: 1; /* Mengambil sisa ruang yang ada */
+  position: relative; /* Penting untuk leaflet */
+}
+
+/* Peta Leaflet Wajib Full di dalam containernya */
+#map {
+  width: 100%;
+  height: 100%;
+  position: absolute !important; /* Memaksa peta mengisi map-container */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* --- RESPONSIVE (BIAR BAGUS DI HP) --- */
+@media (max-width: 768px) {
+  .app-wrapper {
+    flex-direction: column; /* Ubah jadi atas-bawah di HP */
+  }
+  .sidebar {
+    width: 100%;
+    height: 40%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .map-container {
+    height: 60%;
+  }
+}
