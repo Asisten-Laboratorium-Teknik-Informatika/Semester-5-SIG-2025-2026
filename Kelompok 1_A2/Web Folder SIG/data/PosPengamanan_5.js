@@ -1,0 +1,1 @@
+var json_PosPengamanan_5 = {"type":"FeatureCollection","name":"PosPengamanan_5","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1"},"geometry":{"type":"Point","coordinates":[98.463168468890672,3.140298965712879]}}]}

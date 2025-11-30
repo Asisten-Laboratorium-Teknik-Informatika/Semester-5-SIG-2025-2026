@@ -1,0 +1,38 @@
+# Results
+# -------
+
+Generated output: Simulasi Lava Sibayak.asc
+Output resolution (m): 8
+
+# Input Parameters
+# ----------------
+
+# Input Files
+dem path: C:/Users/USER/Documents/Sibayak ASC.asc
+output path: C:/Users/USER/Documents
+output name: Simulasi Lava Sibayak
+fitness enabled: False
+
+# Vent Location
+vent type: point
+x1: 432254.47
+y1: 10350513.42
+
+# Lava Flow Propagation
+hc (m): 3
+hp (m): 10
+h16 enabled: True
+square probabilities enabled: True
+
+# Simulation Parameters
+number of iterations: 1500
+threshold (%): 0
+
+# Lava Flow Length Constraints
+length constraint: manhattan length
+manhattan length (m): 10000
+
+# Advanced settings
+sensitivity enabled: False
+
+
