@@ -1,0 +1,207 @@
+/* --- Global Reset & Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Font modern */
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* ----------------------------------------------------------------- */
+/* I. GLOBAL HEADER / NAVBAR STYLING (index.html & map.html)         */
+/* ----------------------------------------------------------------- */
+#main-header {
+    background-color: #4F0000; /* Warna Header */
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Bayangan */
+    z-index: 2000; /* Pastikan di atas semua elemen lain */
+    width: 100%;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+}
+
+#main-header h1 { 
+    margin: 0; 
+    font-size: 1.6em; /* Sedikit lebih besar */
+    font-weight: 700;
+}
+
+#main-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    padding: 8px 15px; /* Padding lebih besar */
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#main-header nav a:hover { 
+    background-color: #790000;
+    transform: translateY(-2px); 
+}
+
+#main-header nav a.active {
+    background-color: #CC4C02; /* Warna berbeda untuk link aktif */
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------- */
+/* II. HOMEPAGE STYLING (index.html)                                 */
+/* ----------------------------------------------------------------- */
+#hero-section {
+    text-align: center;
+    padding: 120px 20px; 
+    /* --- BAGIAN INI YANG DIUBAH UNTUK BACKGROUND GAMBAR --- */
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), /* Overlay putih transparan */
+                url('img/medan.jpeg') no-repeat center center; /* <--- GANTI 'path/to/your/image.jpg' */
+    background-size: cover; 
+    background-attachment: fixed; /* Opsi: Gambar background ikut scroll */
+    border-bottom: 1px solid #ddd;
+    color: #333; /* Pastikan teks masih terbaca */
+}
+
+#hero-section h2 {
+    font-size: 3em; 
+    color: #4F0000; /* Warna judul utama */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1); /* Sedikit bayangan pada teks */
+}
+
+#hero-section p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #CC4C02; 
+    color: white;
+    padding: 15px 30px; 
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 8px; 
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover { 
+    background-color: #A03B00;
+    transform: translateY(-3px); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#about {
+    padding: 80px 10%; 
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#about h3 {
+    font-size: 2em;
+    color: #4F0000;
+    margin-bottom: 20px;
+}
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ----------------------------------------------------------------- */
+/* III. MAP PAGE STYLING (map.html)                                  */
+/* ----------------------------------------------------------------- */
+
+body#map-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+body#map-page #map {
+    flex-grow: 1; 
+    width: 100%;
+}
+
+#controls {
+    position: absolute;
+    top: 90px; 
+    left: 20px;
+    z-index: 1000;
+    background: white;
+    padding: 18px 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#controls label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4F0000;
+}
+
+#kecamatan_select {
+    padding: 10px 15px; 
+    border-radius: 6px; 
+    border: 2px solid #CC4C02; 
+    width: 280px; 
+    font-size: 1.05em;
+    background-color: #fff;
+    cursor: pointer;
+    appearance: none; 
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%234F0000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13%205.1L146.2%20202.7%2018.7%2074.5a17.6%2017.6%200%200%200-25.3%2023.3l130.8%20130.8a17.6%2017.6%200%200%200%2025.3%200l130.8-130.8a17.6%2017.6%200%200%200-12.9-30.8z%22%2F%3E%3C%2Fsvg%3E'); 
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#kecamatan_select:focus {
+    outline: none;
+    border-color: #800000; 
+    box-shadow: 0 0 0 3px rgba(204, 76, 2, 0.3); 
+}
+
+#kecamatan_select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* ----------------------------------------------------------------- */
+/* IV. LEAFLET INFO/LEGEND STYLING                                   */
+/* ----------------------------------------------------------------- */
+.info {
+    padding: 10px 15px;
+    font: 14px/16px 'Roboto', sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+.legend h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #4F0000;
+    font-weight: bold;
+}
+
+.legend i {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    opacity: 0.8;
+    border-radius: 3px;
+}

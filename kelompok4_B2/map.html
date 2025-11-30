@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Interaktif Kejahatan Kota Medan</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="map-page"> <header id="main-header">
+        <h1>Peta Kejahatan</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="map.html" class="active">Peta Interaktif</a>
+            <a href="index.html#about">Tentang Proyek</a> </nav>
+    </header>
+
+    <div id="controls">
+        <label for="kecamatan_select">Pilih Kecamatan:</label> <select id="kecamatan_select">
+            <option value="">Pilih Kecamatan untuk Navigasi</option>
+        </select>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
