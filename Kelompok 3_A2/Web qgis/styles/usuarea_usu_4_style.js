@@ -1,0 +1,27 @@
+var size = 0;
+var placement = 'point';
+
+var style_usuarea_usu_4 = function (feature, resolution) {
+    var context = {
+        feature: feature,
+        variables: {}
+    };
+
+    var labelText = "";
+    var labelFont = "10px, sans-serif";
+    var labelFill = "#000000";
+
+    var style = [new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: 'rgba(35,35,35,1.0)',
+            width: 0.988
+        }),
+        fill: new ol.style.Fill({
+            color: 'rgba(243, 255, 19, 0.11)'   // ← TRANSPARAN
+        }),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+            labelFill, 'point', "", 0)
+    })];
+
+    return style;
+};
