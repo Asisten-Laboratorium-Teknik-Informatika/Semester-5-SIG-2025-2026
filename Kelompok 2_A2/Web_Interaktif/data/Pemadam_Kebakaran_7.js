@@ -1,0 +1,1 @@
+var json_Pemadam_Kebakaran_7 = {"type":"FeatureCollection","name":"Pemadam_Kebakaran_7","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"Tmpat":"Pemadam Kebakaran"},"geometry":{"type":"Point","coordinates":[98.671214180331248,3.58985992315594]}}]}
