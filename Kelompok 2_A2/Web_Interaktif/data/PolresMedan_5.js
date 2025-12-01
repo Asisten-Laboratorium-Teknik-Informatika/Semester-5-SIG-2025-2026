@@ -1,0 +1,1 @@
+var json_PolresMedan_5 = {"type":"FeatureCollection","name":"PolresMedan_5","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"Tempat":"Polrestabes Medan"},"geometry":{"type":"Point","coordinates":[98.683713260410244,3.600232972758755]}}]}
