@@ -92,23 +92,31 @@ CSV di-_join_ ke layer Administrasi Kecamatan sebagai dasar analisis tematik.
 ## 📁 Struktur Direktori
 
 ```
-/project-kekeringan-medan/
+/📂Kelompok 6_A2/
 │
-├── data/
-│ ├── administrasi_kecamatan.shp
-│ ├── sungai.shp
-│ ├── danau.shp
-│ ├── kantor_airminum.shp
-│ ├── agrisawah.shp
-│ ├── agrikebun.shp
-│ ├── agriladang.shp
-│ └── data_penduduk_2022.csv
+├── 📂Dataset/
+│ ├── 🗺️ADMINISTRASIKECAMATAN
+│ ├── 🗺️DANAU
+│ ├── 📊data_medan
+│ ├── 🗺️JANGKAUANAIRBERSIH
+│ ├── 🗺️KANTORAIRMINUM
+│ ├── 🗺️KEBUN
+| ├── 📊kerugian_medan
+│ ├── 🗺️LADANG
+│ ├── 🗺️SAWAH
+| └── 🗺️SUNGAI
+|
+├── 🖼️layout.png
 │
-├── qgis/
-│ ├── project_medan.qgz
-│ └── style/
-│
-└── README.md
+├── 📂webQgizKekeringan
+| ├── 🗂️css
+| ├── 🗂️data
+| ├── 🗂️js
+| ├── 🗂️legend
+| ├── 🗂️webfonts
+| └── 📄index.html
+├── 💾ProjectKelompokSIG.qgz
+└── 📄README.md
 ```
 
 ---
