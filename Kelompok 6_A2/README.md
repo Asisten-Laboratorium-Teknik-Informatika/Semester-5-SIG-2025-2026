@@ -8,9 +8,8 @@
 
 ## ✨ Ringkasan Proyek
 
-```
-Proyek ini memvisualisasikan **sebaran penduduk terpapar kekeringan** di **Kota Medan** berdasarkan data tahun **2022**. Analisis dilakukan dengan menggabungkan data spasial (SHP) dan non-spasial (CSV), menerapkan _buffer analysis_ untuk mengetahui jangkauan air bersih PDAM, serta membuat peta tematik tingkat kerentanan menggunakan _graduated symbology_.
-```
+```Proyek ini memvisualisasikan``` **sebaran penduduk terpapar kekeringan** ```di``` **Kota Medan** ```berdasarkan data tahu``` **2022**```. Analisis dilakukan dengan menggabungkan data spasial (SHP) dan non-spasial (CSV), menerapkan _buffer analysis_ untuk mengetahui jangkauan air bersih PDAM, serta membuat peta tematik tingkat kerentanan menggunakan _graduated symbology_.```
+
 
 ---
 
