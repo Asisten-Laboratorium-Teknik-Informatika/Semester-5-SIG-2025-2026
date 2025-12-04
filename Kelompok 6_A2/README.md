@@ -87,8 +87,9 @@ Peta akhir menampilkan:
 
 ---
 
-## 📁 Struktur Direktori (Opsional)
+## 📁 Struktur Direktori
 
+```
 /project-kekeringan-medan/
 │
 ├── data/
@@ -106,6 +107,7 @@ Peta akhir menampilkan:
 │ └── style/
 │
 └── README.md
+```
 
 ---
 
