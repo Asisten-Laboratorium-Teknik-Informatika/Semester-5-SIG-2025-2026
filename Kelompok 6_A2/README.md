@@ -133,7 +133,7 @@ Peta akhir menampilkan:
 - 🧭 Legenda, label kecamatan, dan elemen kartografi lainnya.
 ```
 
-<img src="./layout.png" alt="Layout Final" width="50%">
+<img src="./layout.png" alt="Layout Final" >
 
 
 
