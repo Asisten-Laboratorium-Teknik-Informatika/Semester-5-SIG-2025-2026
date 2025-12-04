@@ -5,24 +5,24 @@
 ---
 
 ## ✨ Ringkasan Proyek
-
+```
 Proyek ini memvisualisasikan **sebaran penduduk terpapar kekeringan** di **Kota Medan** berdasarkan data tahun **2022**. Analisis dilakukan dengan menggabungkan data spasial (SHP) dan non-spasial (CSV), menerapkan _buffer analysis_ untuk mengetahui jangkauan air bersih PDAM, serta membuat peta tematik tingkat kerentanan menggunakan _graduated symbology_.
-
+```
 ---
 
 ## 🎯 Tujuan
-
+```
 - 🔎 Mengidentifikasi distribusi wilayah terdampak kekeringan.
 - 📊 Menyajikan peta tematik berbasis data penduduk terpapar, miskin, disabilitas, dan rentan.
 - 🚰 Menganalisis jangkauan layanan air bersih melalui _buffer_ PDAM 1 km.
 - 🗂️ Menggabungkan dataset spasial dan CSV dalam satu analisis terintegrasi.
-
+```
 ---
 
 ## 🗂️ Dataset yang Digunakan
 
 ### 📁 **Layer SHP**
-
+```
 - 🗺️ Administrasi Kecamatan
 - 🌊 Sungai
 - 🏞️ Danau
@@ -30,9 +30,9 @@ Proyek ini memvisualisasikan **sebaran penduduk terpapar kekeringan** di **Kota 
 - 🌾 Agrisawah
 - 🌳 Agrikebun
 - 🪵 Agriladang
-
+```
 ### 📄 **Data CSV**
-
+```
 Memuat:
 
 - 👥 Jumlah Penduduk Terpapar Kekeringan
@@ -41,11 +41,11 @@ Memuat:
 - 👶 Penduduk Usia Rentan
 
 CSV di-_join_ ke layer **Administrasi Kecamatan** sebagai dasar analisis tematik.
-
+```
 ---
 
 ## 🧭 Metode Pengolahan
-
+```
 ### 🔗 **1. Join CSV ke Layer Kecamatan**
 
 - CSV dimuat ke QGIS dan di-_join_ berdasarkan atribut kecamatan.
@@ -66,11 +66,11 @@ CSV di-_join_ ke layer **Administrasi Kecamatan** sebagai dasar analisis tematik
   - 🟩 Hijau → tingkat terendah
   - 🟨 Kuning → tingkat sedang
   - 🟥 Merah → tingkat tertinggi
-
+```
 ---
 
 ## 🗺️ Output Peta
-
+```
 Peta akhir menampilkan:
 
 - 🎯 Peta kerentanan kekeringan dengan 3 tingkat klasifikasi.
@@ -78,13 +78,16 @@ Peta akhir menampilkan:
 - 🌱 Layer penggunaan lahan (sawah, kebun, ladang).
 - 🚰 Buffer 1 km PDAM.
 - 🧭 Legenda, label kecamatan, dan elemen kartografi lainnya.
+```
+
+![Layout Final](./layout.png)
 
 ---
 
 ## 🛠️ Perangkat Lunak
-
+```
 - **QGIS** (direkomendasikan menggunakan versi terbaru)
-
+```
 ---
 
 ## 📁 Struktur Direktori
@@ -108,14 +111,6 @@ Peta akhir menampilkan:
 │
 └── README.md
 ```
-
----
-
-##🗺️Hasil Visualisasi Peta
-
-### **Peta Lengkap Final Layout**
-
-![Layout Final](./layout.png)
 
 ---
 
