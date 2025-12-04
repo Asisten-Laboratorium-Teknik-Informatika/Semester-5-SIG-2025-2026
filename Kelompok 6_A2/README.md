@@ -7,8 +7,9 @@
 ---
 
 ## ✨ Ringkasan Proyek
-
-```Proyek ini memvisualisasikan``` **sebaran penduduk terpapar kekeringan** ```di``` **Kota Medan** ```berdasarkan data tahu``` **2022**```. Analisis dilakukan dengan menggabungkan data spasial (SHP) dan non-spasial (CSV), menerapkan _buffer analysis_ untuk mengetahui jangkauan air bersih PDAM, serta membuat peta tematik tingkat kerentanan menggunakan _graduated symbology_.```
+```
+Proyek ini memvisualisasikan sebaran penduduk terpapar kekeringan di Kota Medan berdasarkan data tahun 2022. Analisis dilakukan dengan menggabungkan data spasial (SHP) dan non-spasial (CSV), menerapkan _buffer analysis_ untuk mengetahui jangkauan air bersih PDAM, serta membuat peta tematik tingkat kerentanan menggunakan _graduated symbology_.
+```
 
 
 ---
@@ -48,7 +49,7 @@ Memuat:
 - 💸 Penduduk Miskin
 - 👶 Penduduk Usia Rentan
 
-CSV di-_join_ ke layer **Administrasi Kecamatan** sebagai dasar analisis tematik.
+CSV di-_join_ ke layer Administrasi Kecamatan sebagai dasar analisis tematik.
 ```
 
 ---
@@ -63,15 +64,15 @@ CSV di-_join_ ke layer **Administrasi Kecamatan** sebagai dasar analisis tematik
 ```
 ### 🟦 **2. Analisis Buffer PDAM (1 km)**
 ```
-- Layer: titik lokasi **kantor air minum**.
-- Radius _buffer_: **1.000 meter**.
+- Layer: titik lokasi kantor air minum.
+- Radius _buffer_: 1.000 meter.
 - Menggambarkan jangkauan layanan air bersih.
 ```
 ### 🎨 **3. Pembuatan Peta Tematik – Graduated Symbology**
 ```
 - Layer: Administrasi Kecamatan
-- Parameter klasifikasi: **Jumlah Penduduk Terpapar Kekeringan**
-- Jumlah kelas: **3 segmen**
+- Parameter klasifikasi: Jumlah Penduduk Terpapar Kekeringan
+- Jumlah kelas: 3 segmen
 - Skema warna:
   - 🟩 Hijau → tingkat terendah
   - 🟨 Kuning → tingkat sedang
@@ -83,7 +84,7 @@ CSV di-_join_ ke layer **Administrasi Kecamatan** sebagai dasar analisis tematik
 ## 🛠️ Perangkat Lunak
 
 ```
-- **QGIS** (direkomendasikan menggunakan versi terbaru)
+- QGIS (direkomendasikan menggunakan versi terbaru)
 ```
 
 ---
