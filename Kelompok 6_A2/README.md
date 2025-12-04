@@ -1,8 +1,8 @@
 # 🌍📊 **Pemetaan Sebaran Penduduk Terpapar Kekeringan Kota Medan (2022)**
 
-```
+
 #### Proyek Sistem Informasi Geografis Menggunakan QGIS
-```
+
 
 ---
 
@@ -56,20 +56,20 @@ CSV di-_join_ ke layer **Administrasi Kecamatan** sebagai dasar analisis tematik
 
 ## 🧭 Metode Pengolahan
 
-```
-### 🔗 **1. Join CSV ke Layer Kecamatan**
 
+### 🔗 **1. Join CSV ke Layer Kecamatan**
+```
 - CSV dimuat ke QGIS dan di-_join_ berdasarkan atribut kecamatan.
 - Data digunakan sebagai input klasifikasi tematik.
-
+```
 ### 🟦 **2. Analisis Buffer PDAM (1 km)**
-
+```
 - Layer: titik lokasi **kantor air minum**.
 - Radius _buffer_: **1.000 meter**.
 - Menggambarkan jangkauan layanan air bersih.
-
+```
 ### 🎨 **3. Pembuatan Peta Tematik – Graduated Symbology**
-
+```
 - Layer: Administrasi Kecamatan
 - Parameter klasifikasi: **Jumlah Penduduk Terpapar Kekeringan**
 - Jumlah kelas: **3 segmen**
